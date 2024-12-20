@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,16 +10,70 @@
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <main>
             <div class="main-container">
-               <div class="back">
+                <div class="back">
                     <img src="assets/icons/arrow-left-02.svg" alt="">
                     <span>Voltar</span>
-               </div>
-               <h1> Formulário de matrícula </h1>
-               <p> Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã. </p>
+                </div>
+                <h1> Formulário de matrícula </h1>
+                <p> Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do
+                    Amanhã. </p>
+
+                <form enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend> Informações da criança </legend>
+                        <div class="input-wrapper">
+                            <label for="fullname"> Nome completo </label>
+                            <input 
+                            type="text" 
+                            name="fullname" 
+                            id="fullname" 
+                            placeholder="Qual o nome da criança?">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="date">
+                                Data de nascimento
+                                <input 
+                                type="date" 
+                                name="date" 
+                                id="date"
+                                lang="pt-BR"
+                                >
+                            </label>
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="gender"> Sexo </label>
+                            <select name="gender" id="gender">
+                                <option value="male"> Masculino</option>
+                                <option value="female"> Feminino </option>
+                                <option value="na"> Prefiro não responder </option>
+                            </select>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="medic-info"> Informações médicas </label>
+                            <textarea 
+                            name="medic-info" 
+                            id="medic-info"
+                            cols="30" rows="10"
+                            placeholder="A criança possui alguma condição médica que a escola deve estar ciente?">
+                            </textarea>
+                        </div>
+                        <div class="droparea-wrapper">
+                            <label for="birth-file"> Certidão de nascimento </label>
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>
+                                Clique aqui para<br> 
+                                selecionar os arquivos
+                            </p>
+                            <input type="file" id="birth-file" name="birth-file">
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
         <aside>
@@ -26,11 +81,13 @@
                 <header>
                     <img src="assets/logo.svg" alt="Logo estrelas do amanhã">
                     <h2> Porque cada momento de <span> aprendizado </span> conta </h2>
-                    <p> Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante. </p>
+                    <p> Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                        estimulante. </p>
                 </header>
                 <img src="assets/illustration.svg" alt="Crianças desenhando em upapel">
             </div>
         </aside>
     </div>
 </body>
+
 </html>
