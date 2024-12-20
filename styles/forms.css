@@ -1,10 +1,11 @@
 @import url(fields/index.css);
 
 form {
-    margin-top: 3rem;
+    
 }
 
 fieldset {
+    margin-top: 3rem;
     border: none;
     
     display: grid;
