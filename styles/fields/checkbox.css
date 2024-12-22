@@ -1,0 +1,35 @@
+.term-wrapper {
+    margin-top: 3rem;
+}
+
+.term-check {
+    display: flex;
+    gap: .5rem;
+    position: relative;
+
+    & input,
+    & input:hover,
+    & input:focus {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    & .check-image {
+        background-image: url(../../assets/icons/check-default.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &:hover .check-image{
+        background-image: url(../../assets/icons/check-hover.svg);
+    }
+
+    &:has(:checked) .check-image {
+        background-image: url(../../assets/icons/check-selected.svg);
+        background-repeat: no-repeat;
+    }
+}

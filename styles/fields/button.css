@@ -1,0 +1,30 @@
+.form-actions {
+    margin-top: 3rem;
+    padding-top: 1rem;
+
+    & .button-wrapper {
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+
+        & .button-inner:nth-child(1) input{
+            background-color: inherit;
+            color: var(--text-highlight);
+            border: 1px solid var(--stroke-highlight);
+
+            &:hover {
+                outline: 0.25rem solid var(--surface-secondary);
+            }
+        }
+
+        & .button-inner:nth-child(2) input{
+            background-color: var(--brand-dark);
+            color: #FFFFFF;
+            border: 1px solid var(--stroke-highlight);
+
+            &:hover {
+                background-color: var(--brand-mid);
+            }
+        }
+    }
+}

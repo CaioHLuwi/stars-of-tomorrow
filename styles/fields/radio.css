@@ -1,7 +1,3 @@
-label + .radio-wrapper {
-    margin-top: 1rem;
-}
-
 .radio-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
